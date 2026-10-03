@@ -1,0 +1,13 @@
+{
+  "name": "atlas-srodziemia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/world.js && node --check dist/cartography.js && node --check dist/regions.js && node --check dist/bonus-regions.js && node --check dist/extra-characters.js && node --check dist/lore.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}
