@@ -18,6 +18,8 @@ Przeciąganie obraca kamerę, kółko przybliża, prawy przycisk przesuwa kadr. 
 
 Bohaterowie otwierają ostatnio wybrany portret. Sześć przycisków wyboru pozostaje przy scenie również na telefonie; podczas oglądania z bliska ustępuje panelowi spaceru.
 
+W zakładce Krainy można przełączać mapę Bilba i mapę Froda, zarówno obok reliefu, jak i na karcie spisu. Pełna immersja wypełnia mapą lub sceną całe okno, usuwając marginesy i grzbiet księgi. Pozostają sterowanie kamerą, wybór mapy lub bohatera i zwiedzanie. Przycisk Wróć do księgi lub Escape przywraca oprawę; wybór mapy i etap podróży pozostają zachowane.
+
 Na mapie wybierz Wyrusz z Bilbem lub Frodem. Etapy są klikalne, a znacznik i szeroki pas atramentu pokazują postęp. Panel kroniki zawiera datę, opowieść i wejście do krainy; po zwiedzaniu można wrócić do zapamiętanego etapu. Odtwarzanie ma cztery tempa oraz opcję podążania kamerą. Suwak, lista etapów i strzałki klawiatury służą do przewijania. Wyprawa, powrót i epilog są rozróżnione; powtórne wizyty w tych samych okolicach mają osobny wybór.
 
 ## Opracowanie i źródła

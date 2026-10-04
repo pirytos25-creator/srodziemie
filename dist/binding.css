@@ -158,3 +158,73 @@ body{background:#34281f;background-image:radial-gradient(ellipse at 50% 35%,#756
 @media(max-width:380px){.main-nav button{font-size:14px}.plate-heading{font-size:9px}.scene-caption h2{font-size:31px}.stage-bottom-tools .icon-button{width:25px;padding:5px}.app-footer #mobile-index{font-size:14px}.app-footer select{max-width:80px}.closed-volume .cover-content h1{font-size:56px}.closed-volume .cover-subtitle{font-size:17px}.closed-volume .gold-button{font-size:17px;padding:10px 15px}.plate-folio span:first-child{font-size:10px}.hero-picker button{font-size:15px}}
 @media(max-width:760px){.tour-controls{display:flex}.main-nav{position:fixed;bottom:7px}}
 @media(prefers-reduced-motion:reduce){#cover,.closed-volume,#cover.opening .closed-volume{animation:none;transition:none;transform:none}#cover.opening{opacity:0}.turn-leaf{display:none!important}#book-app:not([hidden]) .book{animation:none}}
+
+/* Maps are available within the regions index; immersion removes the book's bounds. */
+.region-map-picker{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 23px}
+.region-map-picker button{padding:12px 8px;background:none;border:1px solid #a58c5855;color:#735a35;font:22px var(--serif);min-height:69px}
+.region-map-picker button[aria-pressed=true]{background:#b29b6230;border-color:#977f4e;color:#4c4029}
+.region-map-picker small{display:block;font:italic 15px var(--serif);margin-top:5px;color:#927a50}
+.regions-map #canvas-host,.regions-map #map-labels,.regions-map .stage-vignette{bottom:186px}
+.regions-map .map-stage-picker{left:36px;right:32px;top:auto;bottom:124px;justify-content:center;transform:none}
+.regions-map .map-stage-picker button{flex:1}
+.regions-map .start-journey{left:38px;right:auto;bottom:80px;font-size:19px}
+.regions-map .stage-top-tools,.regions-map .stage-bottom-tools{bottom:45px}
+.stage .immersion-button{display:flex;align-items:center;gap:7px;padding:7px 10px;min-height:35px;background:#eadab5;border:1px solid #aa956655;color:#6e5c38;font:17px var(--serif);white-space:nowrap}
+.immersion-button svg{width:17px;height:17px}
+.immersion-button:hover{background:#dfcda2}
+.stage-top-tools{z-index:7}
+.stage-bottom-tools{pointer-events:none}
+.stage-bottom-tools button{pointer-events:auto}
+
+body.immersive{overflow:hidden;background:#151c16}
+.immersive #book-app{position:fixed;inset:0;padding:0!important;height:100dvh;min-height:0;overflow:hidden}
+.immersive .book,.immersive .book.foldout{width:100%;max-width:none;height:100dvh!important;min-height:0!important;margin:0;border-radius:0;animation:none!important;transform:none;perspective:none}
+.immersive .book .stage{width:100%;height:100dvh!important;min-height:0!important;border-radius:0;box-shadow:none}
+.immersive .stage #canvas-host,.immersive .stage #map-labels,.immersive .stage-vignette{inset:0!important;border:0;border-radius:0;box-shadow:none}
+.immersive .book .book-spine,.immersive .book .book-headband{display:none!important}
+.immersive .scene-caption{display:block!important;top:22px!important;left:24px!important;right:auto!important;bottom:auto!important;max-width:calc(100% - 230px)!important;padding:12px 16px!important;color:#eedfbb!important;background:#1e2c23d9!important;border:1px solid #bba36644!important;border-radius:3px;text-shadow:none!important;z-index:6}
+.immersive .scene-caption h2{font:34px/1.05 var(--serif);margin:0 0 5px}
+.immersive .scene-caption p{color:#caba95!important;font:italic 17px/1.25 var(--serif)}
+.immersive #restore-ui{position:fixed;right:22px;top:22px;left:auto;bottom:auto;z-index:20;border:1px solid #bca77077;border-radius:3px;background:#1e2c23e8;color:#f2e2bd;box-shadow:0 4px 16px #0003;font:18px var(--serif);min-height:44px;padding:10px 15px}
+.immersive .stage-top-tools{display:flex;top:auto!important;bottom:22px!important;right:22px!important;gap:6px;z-index:8}
+.immersive #immersive{display:none}
+.immersive .stage-top-tools #labels,.immersive .stage-top-tools #reset{display:block}
+.immersive .stage-bottom-tools{display:flex;left:24px!important;right:auto!important;bottom:22px!important;gap:7px;padding:7px;background:#1e2c23dd;border:1px solid #bba36644;border-radius:3px;z-index:8}
+.immersive .stage .icon-button{display:block;width:37px;height:37px;color:#e6d5aa;background:#25382ee8;border-color:#bba36644}
+.immersive .stage .icon-button:hover{background:#425241}
+.immersive .stage-top-tools #cutaway{bottom:116px;background:#25382ee8;color:#e6d5aa;border-color:#bba36655}
+.immersive #map-stage-picker:not([hidden]){display:flex!important;left:24px!important;right:auto!important;top:126px!important;bottom:auto!important;transform:none;background:#1e2c23e8;border-color:#bba36666;z-index:7}
+.immersive .map-stage-picker button{color:#d1c097;font-size:19px;min-height:41px;padding:8px 19px;flex:none}
+.immersive .map-stage-picker button[aria-pressed=true]{background:#65704a;color:#f6e9c6}
+.immersive #start-journey:not([hidden]),.immersive #visit:not([hidden]){display:block!important;left:auto!important;right:24px!important;bottom:84px!important;top:auto!important;color:#eadbb5;background:#25382ee8;border:1px solid #bba36655;border-radius:3px;padding:10px 17px;font-size:20px}
+.immersive #hero-picker:not([hidden]){display:grid;left:24px;right:auto;bottom:84px;max-width:610px;width:calc(100% - 230px);grid-template-columns:repeat(6,1fr);padding:8px;background:#1e2c23e8;border:1px solid #bba36655}
+.immersive .hero-picker button{color:#d9c69e;border-color:#bba36655;font-size:17px;min-height:39px}
+.immersive .hero-picker button[aria-pressed=true]{color:#f6e9c6;background:#65704a}
+.immersive #tour-controls:not([hidden]){display:grid!important;left:24px;right:24px;bottom:84px;max-width:760px;padding:14px 17px;color:#eadbb5;background:#1e2c23ed;border:1px solid #bba36666;border-radius:3px}
+.immersive .tour-controls p{color:#c6b892}.immersive .tour-controls button,.immersive .tour-controls select{color:#e7d4ac;background:#2e4033;border-color:#bba36655;width:auto}
+.immersive .tour-controls #tour-end{color:#f2e2bd;background:#65704a;border-color:#bba36666}
+.immersive #journey-strip:not([hidden]){display:flex;left:24px;right:24px;bottom:90px;background:#1e2c23ec;color:#dfd0ad;padding:12px 15px;border:1px solid #bba36655;border-radius:3px;z-index:8}
+.immersive .journey-strip select,.immersive .journey-strip #journey-follow{background:#2e4033;color:#e7d4ac;border-color:#bba36655}
+.immersive .journey-card{left:24px;top:190px;width:270px;max-height:calc(100dvh - 410px);color:#eadbb5;background:#1e2c23ed;border-color:#bba36666;padding:12px 16px}
+.immersive .journey-card p,.immersive .journey-card .eyebrow,.immersive .journey-card .paper-button{color:#cdbc94}
+.immersive .journey-card h3{color:#eadbb5}
+@media(max-width:760px){
+ .region-map-picker button{font-size:21px}.region-map-picker small{font-size:14px}
+ .regions-map .map-stage-picker{left:25px;right:22px;top:auto;bottom:124px}
+ .stage .immersion-button{font-size:15px;min-height:34px;padding:6px 8px;gap:5px}
+ .immersive .scene-caption{left:12px!important;top:76px!important;max-width:calc(100% - 24px)!important;padding:8px 12px!important}
+ .immersive .scene-caption h2{font-size:27px}.immersive .scene-caption p{display:none!important}
+ .immersive #restore-ui{right:12px;top:12px;min-height:42px;font-size:17px}
+ .immersive #map-stage-picker:not([hidden]){top:137px!important;left:12px!important;max-width:calc(100% - 24px)}
+ .immersive .map-stage-picker button{font-size:17px;padding:8px 13px}
+ .immersive .stage-bottom-tools{left:12px!important;bottom:12px!important;gap:4px;padding:5px}
+ .immersive .stage .icon-button{width:31px;height:34px}
+ .immersive .stage-top-tools{right:12px!important;bottom:17px!important}
+ .immersive .stage-top-tools #labels{display:none}
+ .immersive #start-journey:not([hidden]),.immersive #visit:not([hidden]){right:12px!important;bottom:76px!important;font-size:18px}
+ .immersive #hero-picker:not([hidden]){left:12px;right:12px;bottom:132px;width:auto;max-width:none;grid-template-columns:repeat(3,1fr)}
+ .immersive #tour-controls:not([hidden]){display:flex!important;left:12px;right:12px;bottom:76px;padding:10px;max-width:none}
+ .immersive #journey-strip:not([hidden]){display:grid;left:12px;right:12px;bottom:78px;padding:9px;grid-template-columns:90px minmax(0,1fr) minmax(0,1fr)}
+ .immersive .journey-card{left:12px;top:196px;width:calc(100% - 24px);max-height:calc(100dvh - 430px)}
+ .immersive .journey-strip #journey-follow{font-size:13px;padding:5px 3px}
+}
