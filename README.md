@@ -2,6 +2,8 @@
 
 Interaktywna księga w języku polskim: dwa atlasy, 14 lokacji, szlaki Bilba i Froda, osobne sceny 3D, sześć portretów, kronika oraz zwiedzanie. Animowane karty mają pamięć ostatniego rozdziału i etapów wypraw w bieżącej sesji.
 
+Oprawa przedstawia zamknięty tom w zielonej skórze, a po otwarciu dwie karty na stole: tekst po lewej i interaktywną ilustrację po prawej. Grzbiet, kapitałka, warstwy papieru, folia i wystające zakładki zachowują wspólną formę księgi. Mapy zajmują rozkładówkę. Przewracana karta ma przód i odwrocie i obraca się wokół grzbietu; ograniczony ruch pomija tę animację. Na telefonie ilustracja i tekst są osobnymi widokami tej samej karty, przełączanymi przyciskiem Czytaj kartę.
+
 Shire obejmuje jeden wielki Pagórek z Bag End na górnym stoku, trzema domami Bagshot Row poniżej i trzema dodatkowymi bocznymi norami. Rozgałęzione, sklepione wnętrze Bag End znajduje się pod ziemią; przekrój odsłania hall i pokoje. Niżej leży Hobbiton po obu stronach Wody, z mostem i Starym Młynem.
 
 Przebudowane osady mają rozległe obszary zabudowane: ulice i podwórza Bree na zachodnim zboczu, siedem dzielnic Minas Tirith z naprzemiennymi bramami i tunelami przez skalny dziób, tarasy Wielkiego Domu w Rivendell oraz drogę przez Edoras ku Meduseld. Esgaroth zajmuje wspólny pokład z kwartałami, wodnym rynkiem, kanałem dla łodzi i długim mostem na ląd. Erebor, Goblin-town i Sale Thranduila mają wielopoziomowe zespoły sal, połączonych korytarzy i funkcjonalnie odrębnych pomieszczeń. Szczegółowe parcele i plany wnętrz są interpretacją opartą na opisanych relacjach przestrzennych, nie zachowanymi planami kanonicznymi.
