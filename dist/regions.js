@@ -225,7 +225,7 @@ function context(seed) {
   };
   const finish = (camera, target, fog, background, sun, tours = []) => {
     batchStaticMeshes(group);
-    return { group, camera, target, fog, background, sun, tours, animate: t => animators.forEach(fn => fn(t)) };
+    return { group, camera, target, fog, background, sun, tours, animate: (t,dt=1/60) => animators.forEach(fn => fn(t,dt)) };
   };
   return { group, rnd, animators, m, mat, mesh, box, ball, cyl, cone, torus, beam, tube, lathe, flat, terrain, island, landscape, distantTrees, ribbon, rock, tree, grass, window, arch, gable, roof, fence, house, lantern, waterfall, finish };
 }
@@ -412,7 +412,7 @@ function shire() {
   const entrance=cyl(1.23,1.23,.19,m.door,[0,0,1.23],96,entryLeaf);entrance.rotation.z=Math.PI/2;
   const doorRing=torus(1.3,.15,m.paleWood,[doorX+.13,doorY,hallZ],home);doorRing.rotation.y=Math.PI/2;
   const innerRing=torus(1.05,.026,m.darkWood,[.12,0,1.23],entryLeaf);innerRing.rotation.y=Math.PI/2;
-  ball(.09,m.gold,[.25,0,1.23],undefined,entryLeaf);entryLeaf.traverse(o=>{if(o.isMesh)o.userData.dynamic=true;});c.animators.push(()=>{doorAngle=mix(doorAngle,doorDestination,.085);entryLeaf.rotation.y=doorAngle;});
+  ball(.09,m.gold,[.25,0,1.23],undefined,entryLeaf);entryLeaf.traverse(o=>{if(o.isMesh)o.userData.dynamic=true;});c.animators.push((t,dt=1/60)=>{doorAngle=mix(doorAngle,doorDestination,1-Math.pow(1-.085,dt*60));entryLeaf.rotation.y=doorAngle;});
   for(let i=0;i<25;i++){const a=i*TAU/25;const stone=box(.27,.28,.3,m.chalk,[doorX+.02,doorY+Math.sin(a)*1.53,hallZ+Math.cos(a)*1.53],home);stone.rotation.x=-a;}
   const porch=new THREE.Group();porch.position.set(doorX+.18,floorY,hallZ);home.add(porch);box(1.45,.13,3.5,m.chalk,[.56,-.03,0],porch);for(let i=0;i<12;i++)box(.35,.17,2.55,[m.chalk,m.rock][i%2],[1.28+i*.22,-.12-i*.075,0],porch);
   lantern(doorX+.22,floorY+1.87,hallZ-1.63,home);

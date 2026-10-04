@@ -8,7 +8,7 @@ Przebudowane osady mają rozległe obszary zabudowane: ulice i podwórza Bree na
 
 ## Podgląd
 
-Z katalogu projektu uruchom: `npm run preview`. Otwórz http://127.0.0.1:4173. Biblioteka Three.js i fonty są zapisane lokalnie w dist; przeglądarka wymaga WebGL2. 
+Z katalogu projektu uruchom: `npm run preview`. Otwórz http://127.0.0.1:4173. Biblioteka Three.js i fonty są zapisane lokalnie w dist; przeglądarka wymaga WebGL2.
 
 ## Sterowanie
 
@@ -31,3 +31,9 @@ Okładka: ImageGen (wbudowane narzędzie); prompt w ASSET-PROMPTS.txt. Ambient j
 `dist/app.js` — interakcje i renderowanie; `cartography.js` — mapy; `regions.js` i `bonus-regions.js` — proceduralne sceny; `extra-characters.js` — Legolas, Elrond i Smaug; `lore.js` — kronika i źródła.
 
 Jakość Ultra używa wysokiej rozdzielczości i cieni 4096px. Tryb Lekka ogranicza obciążenie. Modele są stylizowanymi autorskimi rekonstrukcjami, nie skanami aktorów ani oryginalnymi modelami produkcyjnymi.
+
+## Płynność i dostępność
+
+Domyślny tryb Automatyczna dopasowuje rozdzielczość do czasu klatek, zachowując geometrię modeli. Ultra pozostaje dostępna jako ręczny wybór. Cienie ruchomych obiektów są odświeżane do ośmiu razy na sekundę, a cienie nieruchomych scen po zmianach oświetlenia lub przekroju. Zamknięta i niewidoczna księga zatrzymuje pętlę; nieruchoma mapa renderuje się po zmianie kadru. Kamera, obrót i drzwi uwzględniają czas klatki. Ostatnie trzy dioramy są przechowywane w pamięci; starsze zwalniają geometrię, materiały i tekstury.
+
+Miniatury opowieści powstają pojedynczo w osobnym małym buforze obrazu. Wygenerowanie ich nie zmienia rozmiaru widocznego reliefu. Karty rozdziałów mają czytelniejsze etykiety i obsługę strzałek w zakładkach. Mobilny spis można zamknąć przyciskiem, kliknięciem poza kartą albo Escape. Preferencja ograniczonego ruchu wyłącza automatyczne animacje i przewracanie stron.
